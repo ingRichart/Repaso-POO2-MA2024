@@ -1,0 +1,26 @@
+@model List<CenaModel>;
+
+<div>
+    <h1>Las cenas de hoy</h1>
+</div>
+
+<table class="table">
+<thead></thead>
+<tbody>
+@foreach (var cena in Model)
+{
+    <tr>
+        <td>
+            @cena.Name
+        </td>
+        <td>
+            @cena.Quantity
+        </td>
+        <td>
+            @cena.Amount
+        </td>
+    </tr>
+}
+</tbody>
+<tfoot></tfoot>
+</table>

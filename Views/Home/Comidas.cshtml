@@ -1,0 +1,23 @@
+@model ComidaModel;
+
+<div>
+    <h1>Las comidas de hoy</h1>
+</div>
+
+<form>
+    <div class="mb-3">
+        <label>Nombre</label>
+        <input type="text" for="Name" />
+    </div>
+    <div class="mb-3">
+        <label>Cantidad</label>
+        <input type="text" for="Quantity" />
+    </div>
+    <div class="mb-3">
+        <label>Precio</label>
+        <input type="text" for="Amount" />
+    </div>
+    
+    <button class="btn btn-primary">Guardar</button>
+    <a class="btn btn-secundary" asp-action="Index" asp-controller="Home">Regresar</a>
+</form>
